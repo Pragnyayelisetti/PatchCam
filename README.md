@@ -4,13 +4,7 @@
 
 **PatchCam turns a phone camera into a debugging bridge for locked-down, offline, or otherwise restricted machines.** Point it at an error on a screen that won't let you copy, paste, or connect to the internet — PatchCam reads it, finds or generates a fix, checks that fix with a real parser, and delivers it back to the machine that couldn't receive it any other way.
 
-<p align="center">
-  <img src="assets/01-capture-ocr.png" width="230" alt="PatchCam capturing an error via live OCR" />
-  <img src="assets/02-diagnosis.png" width="230" alt="PatchCam diagnosis screen with root cause and proposed patch" />
-  <img src="assets/03-send-to-laptop.png" width="230" alt="Sending the verified patch to the laptop via Office Kit" />
-</p>
-
-[**Demo Video**](<ADD_YOUR_YOUTUBE_LINK>) · [**Repository**](<ADD_YOUR_REPO_URL>) · Built for **iQOO Hackathon 2026** — Track: Developer Tools
+· Built for **iQOO Hackathon 2026** — Track: Developer Tools
 
 ---
 
@@ -82,9 +76,6 @@ PatchCam is honest about what it can prove. **Python fixes are checked with a re
 
 Office Kit is a system feature of OriginOS 6, not a third-party SDK, so PatchCam uses the same three surfaces a person would use by hand — and counts every real use of each, live, on the Result screen ("Office Kit used *N* time(s) this session").
 
-<p align="center">
-  <img src="assets/04-office-kit-usage.png" width="260" alt="Live, on-device count of Office Kit usage" />
-</p>
 
 | Surface | Best for |
 |---|---|
@@ -121,9 +112,6 @@ The laptop prints a 6-digit pairing code (and a QR). The phone discovers the lap
 
 ## Feedback Loop
 
-<p align="center">
-  <img src="assets/05-feedback-loop.png" width="260" alt="PatchCam's five-step feedback loop: Observe, Reconstruct, Diagnose, Validate, Update" />
-</p>
 
 Every scan moves through five visible stages — **Observe → Reconstruct → Diagnose → Validate → Update** — and you can inspect or correct what PatchCam read at any stage. Marking a fix as "Worked," "Partly," or "Didn't" is stored on-device and adjusts PatchCam's confidence for that fix type going forward.
 
@@ -236,33 +224,9 @@ Built for **iQOO Hackathon 2026** · Track: Developer Tools
 
 Contributions, ideas, and feedback are welcome — open an issue or submit a pull request.
 
-## License
+
 
 ```
-MIT License
-
-Copyright (c) 2026 Team Funtouch
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
-Swap this for your license of choice before publishing if MIT isn't the right fit — save it as `LICENSE` at the repo root.
 
 ---
 
