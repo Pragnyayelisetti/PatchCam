@@ -226,8 +226,6 @@ Contributions, ideas, and feedback are welcome — open an issue or submit a pul
 
 
 
-```
-
 ---
 
 <p align="center">
